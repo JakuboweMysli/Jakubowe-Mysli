@@ -1,5 +1,5 @@
 baseURL = 'http://jakubowemysli.pl/'
-title = 'Jakubowe Myśli'
+title = 'Myśli Jakubowe'
 theme = "shibui"
 
 [params]

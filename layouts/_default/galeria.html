@@ -109,4 +109,16 @@ document.addEventListener('keydown', e => {
   else if (e.key === 'Escape') overlay.classList.add('hidden');
 });
 </script>
+
+
+<hr>
+
+<div>
+  <nav class="path-nav">
+    <ol>
+      {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+    </ol>
+  </nav>
+</div>
+
 {{ end }}
