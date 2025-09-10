@@ -1,0 +1,25 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<div class="page-content">{{ .Content }}</div>
+
+<div class="tags-list">
+  <strong>Tagi: </strong>
+  {{ $first := true }}
+  {{ range $name, $_ := .Site.Taxonomies.tags }}
+    {{ if not $first }} — {{ end }}
+    <a href="{{ "tags/" | relURL }}{{ $name | urlize }}">{{ $name }}</a>
+    {{ $first = false }}
+  {{ end }}
+</div>
+
+<br>
+
+<div class="posts-list">
+  <p><strong>Wpisy</strong></p>
+  {{ range where .Site.RegularPages "Section" "posts" }}
+    <article>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    </article>
+  {{ end }}
+</div>
+{{ end }}
