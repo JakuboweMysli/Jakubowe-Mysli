@@ -2,8 +2,11 @@
 title: "Jakubowe myśli"
 date: 2025-09-10
 ---
+<img alt="bg.jpg" src="zdjecia/bg.jpg">
 
 # Strona główna
 
-Poniżej odnośniki do rzeczy, które można znaleźć na mojej stronie. Zapraszam.
+Blog Jakuba Strauchmanna.
+<br>
+Poniżej linki do sekcji strony.
 
