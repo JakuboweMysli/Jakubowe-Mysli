@@ -9,4 +9,3 @@ date: 2025-09-10
 Blog Jakuba Strauchmanna.
 <br>
 Poniżej linki do sekcji strony.
-
