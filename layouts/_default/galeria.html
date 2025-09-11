@@ -8,13 +8,13 @@
 
 <!-- Galeria -->
 <div class="gallery">
-  {{ $images := readDir "assets/zdjecia" }}
-  {{ range $images }}
-    {{ if not .IsDir }}
-      {{ $res := resources.Get (printf "zdjecia/%s" .Name) }}
+  {{ $images := sort (readDir "assets/zdjecia") "Name" "desc" }}
+  {{ range $i, $img := $images }}
+    {{ if not $img.IsDir }}
+      {{ $res := resources.Get (printf "zdjecia/%s" $img.Name) }}
       <div class="gallery-item">
         <a href="{{ $res.RelPermalink }}" class="lightbox">
-          <img src="{{ $res.RelPermalink }}" alt="{{ .Name }}" class="thumb">
+          <img src="{{ $res.RelPermalink }}" alt="{{ $img.Name }}" class="thumb">
         </a>
       </div>
     {{ end }}
