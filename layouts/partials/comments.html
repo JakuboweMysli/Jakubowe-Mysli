@@ -23,6 +23,8 @@
 </style>
 
 <form id="commentForm">
+  <input type="hidden" name="postId" value="{{ .Permalink }}">
+
   <input type="text" name="nick" placeholder="Twój nick" required>
   <br>
   <textarea name="comment" placeholder="Twój komentarz" required></textarea>
@@ -37,8 +39,10 @@ const commentsDiv = document.getElementById('comments');
 
 async function fetchComments() {
   try {
-    const res = await fetch('/.netlify/functions/comments');
+    const postId = form.postId.value;
+    const res = await fetch(`/.netlify/functions/comments?postId=${encodeURIComponent(postId)}`);
     const data = await res.json();
+    if (!Array.isArray(data)) return;
     commentsDiv.innerHTML = data.map(c => 
       `<p><strong>${c.nick}:</strong> ${c.comment}</p>`).join('');
   } catch (err) {
@@ -46,18 +50,18 @@ async function fetchComments() {
   }
 }
 
-// wysyłka komentarza
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const nick = form.nick.value.trim();
   const comment = form.comment.value.trim();
+  const postId = form.postId.value;
   if (!nick || !comment) return;
 
   try {
     await fetch('/.netlify/functions/comments', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ nick, comment }),
+      body: JSON.stringify({ nick, comment, postId }),
     });
     form.reset();
     fetchComments(); // odśwież komentarze po dodaniu
@@ -69,3 +73,4 @@ form.addEventListener('submit', async (e) => {
 // pobierz komentarze przy starcie
 fetchComments();
 </script>
+

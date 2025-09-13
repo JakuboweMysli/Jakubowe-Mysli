@@ -1,3 +1,7 @@
+# pliki środowiskowe i credentials
+.env
+*.json
+
 #Automat do gita
 /git skrypt.bat
 
