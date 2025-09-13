@@ -1,0 +1,23 @@
+{
+  "name": "jakubowe-mysli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JakuboweMysli/Jakubowe-Mysli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JakuboweMysli/Jakubowe-Mysli/issues"
+  },
+  "homepage": "https://github.com/JakuboweMysli/Jakubowe-Mysli#readme",
+  "dependencies": {
+    "googleapis": "^159.0.0"
+  }
+}
