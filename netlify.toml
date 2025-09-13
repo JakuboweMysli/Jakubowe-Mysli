@@ -6,3 +6,6 @@
 
 [build.environment]
   HUGO_VERSION = "0.146.5"
+
+[functions.environment]
+NODE_OPTIONS = "--openssl-legacy-provider"
