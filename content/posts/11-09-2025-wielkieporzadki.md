@@ -5,6 +5,8 @@ draft: false
 tags: ["myśli",]
 ---
 
+<article class="print-area">
+
 Już dłuższy czas czułem się przytłoczony ilością spraw i rzeczy. Radośnie brałem na siebie coraz to więcej odpowiedzialności czy szukałem coraz to kolejnych zainteresowań, aż doszło do tego, że nie mam czasu się niczym porządnie zająć, a różnej maści sprzęty posiadam tylko po to, żeby je posiadać i dbać o nie. 
 
 Czego nie potrzebuję, nie chcę lub nie używam — sprzedaję, oddaję i wyrzucam. Kilkukrotnie już doszło do zabawnej sytuacji, gdy nikt nie chce przyjąć ode mnie przedmiotów kolekcjonerskich o całkiem sporej wartości. Żal je sprzedać, bo są na tyle unikatowe, że nigdy więcej może nie być okazji czegoś takiego kupić. Są przy tym na tyle specyficzne, że mogą się kiedyś przydać, i jeśli nie znajdę ich wśród przyjaciół i rodziny to pozostanie żal i zgrzytanie zębów.
@@ -18,3 +20,5 @@ Powoli odgrzebuję się z tego wysypiska. Sprzątam w domu, na działce i w piwn
 A z popiołów starych śmieci wyrosną nowe. Mam nadzieję, że będę miał siłę, odwagę i mądrość kierować nimi od samego początku, dbać o nie, przycinać gdy się rozrastają i plewić okolicę, aby nic ich nie przytłoczyło.
 
 Albo za jakiś czas znowu przyjdą Wielkie Porządki.
+
+</article>

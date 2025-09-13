@@ -1,0 +1,71 @@
+<div class="comments-header">
+  <hr class="comments-separator">
+  <strong>Komentarze</strong>
+</div>
+
+<style>
+.comments-header {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.comments-separator {
+  border: none;
+  border-top: 1px solid rgba(0,0,0,0.1); /* subtelna linia */
+  margin-bottom: 8px;
+}
+
+.comments-header h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0;
+}
+</style>
+
+<form id="commentForm">
+  <input type="text" name="nick" placeholder="Twój nick" required>
+  <br>
+  <textarea name="comment" placeholder="Twój komentarz" required></textarea>
+  <br>
+  <button type="submit">Wyślij</button>
+</form>
+<div id="comments"></div>
+
+<script>
+const form = document.getElementById('commentForm');
+const commentsDiv = document.getElementById('comments');
+
+async function fetchComments() {
+  try {
+    const res = await fetch('/.netlify/functions/comments');
+    const data = await res.json();
+    commentsDiv.innerHTML = data.map(c => 
+      `<p><strong>${c.nick}:</strong> ${c.comment}</p>`).join('');
+  } catch (err) {
+    console.error('Błąd pobierania komentarzy:', err);
+  }
+}
+
+// wysyłka komentarza
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const nick = form.nick.value.trim();
+  const comment = form.comment.value.trim();
+  if (!nick || !comment) return;
+
+  try {
+    await fetch('/.netlify/functions/comments', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ nick, comment }),
+    });
+    form.reset();
+    fetchComments(); // odśwież komentarze po dodaniu
+  } catch (err) {
+    console.error('Błąd wysyłki komentarza:', err);
+  }
+});
+
+// pobierz komentarze przy starcie
+fetchComments();
+</script>

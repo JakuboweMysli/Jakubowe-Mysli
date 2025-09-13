@@ -1,6 +1,8 @@
 {{ define "main" }}
+
 <h1>{{ .Title }}</h1>
 <div class="post-content">{{ .Content }}</div>
+{{ partial "comments.html" . }}
 
 <!-- Lightbox overlay -->
 <div id="lightbox-overlay" class="hidden">

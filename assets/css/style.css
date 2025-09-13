@@ -1,0 +1,30 @@
+.page-tools button {
+  background: none;       /* brak tła */
+  border: none;           /* brak ramki */
+  color: #333;            /* kolor tekstu */
+  padding: 8px 16px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.page-tools button:hover {
+  color: #a0a0a0;         /* zmiana koloru tekstu przy najechaniu */
+}
+
+#commentForm input,
+#commentForm textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  padding: 6px 8px;
+  font-size: 12px;
+  resize: vertical; /* tylko wertykalnie */
+}
+
+
+#commentForm button {
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}

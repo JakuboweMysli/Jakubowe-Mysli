@@ -1,0 +1,80 @@
+<div class="page-tools">
+  <div class="font-controls">
+    <strong>
+    <button onclick="changeFontSize(1)">A+</button>
+    <button onclick="changeFontSize(-1)">A-</button>
+    <button onclick="resetFontSize()">A</button>
+    <button onclick="printSelected()">Drukuj</button>
+    </strong>
+  </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // znajdź przycisk drukowania
+  const printBtn = document.querySelector('.font-controls button[onclick="printSelected()"]');
+  if (!printBtn) return;
+
+  // ukryj go domyślnie
+  printBtn.style.display = 'none';
+
+  // pokaż tylko jeśli istnieje <article class="print-area">
+  if (document.querySelector('article.print-area')) {
+    printBtn.style.display = 'inline-block';
+  }
+});
+</script>
+
+
+<script>
+function printSelected() {
+  const area = document.querySelector('.print-area');
+  if (!area) return;
+
+  const bodyFontSize = window.getComputedStyle(document.body).fontSize;
+
+  // Pobieramy tytuł strony Hugo
+  const pageTitle = "{{ .Title }}";
+
+  const newWin = window.open('', '', 'width=800,height=600');
+  newWin.document.write('<html><head>');
+  
+  // Skopiuj wszystkie style z obecnej strony
+  document.querySelectorAll('link[rel="stylesheet"], style').forEach(el => {
+    newWin.document.write(el.outerHTML);
+  });
+
+  // Dodaj inline style dla body, żeby zachować aktualny rozmiar czcionki
+  newWin.document.write(`<style>body { font-size: ${bodyFontSize}; }</style>`);
+
+  newWin.document.write('</head><body>');
+  newWin.document.write(`<h1>${pageTitle}</h1>`);
+  newWin.document.write(area.outerHTML); // wstaw zawartość do druku
+  newWin.document.write('</body></html>');
+  newWin.document.close();
+  newWin.focus();
+  newWin.print();
+  newWin.close();
+}
+</script>
+
+<script>
+let defaultSize = 12;
+let currentSize = localStorage.getItem("fontSize") 
+                 ? parseInt(localStorage.getItem("fontSize")) 
+                 : defaultSize;
+
+document.body.style.fontSize = currentSize + "px";
+
+function changeFontSize(step) {
+  currentSize += step;
+  document.body.style.fontSize = currentSize + "px";
+  localStorage.setItem("fontSize", currentSize);
+}
+
+function resetFontSize() {
+  currentSize = defaultSize;
+  document.body.style.fontSize = currentSize + "px";
+  localStorage.setItem("fontSize", currentSize);
+}
+
+</script>
