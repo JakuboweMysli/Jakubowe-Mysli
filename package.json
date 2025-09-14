@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/JakuboweMysli/Jakubowe-Mysli#readme",
   "dependencies": {
+    "dotenv": "^17.2.2",
     "googleapis": "^159.0.0"
   }
 }
