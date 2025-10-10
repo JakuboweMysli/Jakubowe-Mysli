@@ -31,29 +31,52 @@ function printSelected() {
   if (!area) return;
 
   const bodyFontSize = window.getComputedStyle(document.body).fontSize;
-
-  // Pobieramy tytuł strony Hugo
   const pageTitle = "{{ .Title }}";
 
   const newWin = window.open('', '', 'width=800,height=600');
-  newWin.document.write('<html><head>');
-  
-  // Skopiuj wszystkie style z obecnej strony
-  document.querySelectorAll('link[rel="stylesheet"], style').forEach(el => {
-    newWin.document.write(el.outerHTML);
+  const doc = newWin.document;
+
+  doc.write('<html><head><title>' + pageTitle + '</title></head><body></body></html>');
+  doc.close();
+
+  // skopiuj style
+  const styles = document.querySelectorAll('link[rel="stylesheet"], style');
+  let pending = 0;
+
+  styles.forEach(el => {
+    const clone = el.cloneNode(true);
+
+    if (clone.tagName === "LINK") {
+      pending++;
+      clone.onload = () => {
+        pending--;
+        if (pending === 0) finish();
+      };
+      clone.onerror = () => {
+        pending--;
+        if (pending === 0) finish();
+      };
+    }
+
+    doc.head.appendChild(clone);
   });
 
-  // Dodaj inline style dla body, żeby zachować aktualny rozmiar czcionki
-  newWin.document.write(`<style>body { font-size: ${bodyFontSize}; }</style>`);
+  // własny styl font-size
+  const style = doc.createElement('style');
+  style.textContent = `body { font-size: ${bodyFontSize}; }`;
+  doc.head.appendChild(style);
 
-  newWin.document.write('</head><body>');
-  newWin.document.write(`<h1>${pageTitle}</h1>`);
-  newWin.document.write(area.outerHTML); // wstaw zawartość do druku
-  newWin.document.write('</body></html>');
-  newWin.document.close();
-  newWin.focus();
-  newWin.print();
-  newWin.close();
+  // zawartość
+  doc.body.innerHTML = `<h1>${pageTitle}</h1>${area.outerHTML}`;
+
+  function finish() {
+    newWin.focus();
+    newWin.print();   // tu powinno od razu otworzyć okno wyboru drukarki
+    newWin.close();
+  }
+
+  // jeśli nie było <link>, wywołaj od razu
+  if (pending === 0) finish();
 }
 </script>
 

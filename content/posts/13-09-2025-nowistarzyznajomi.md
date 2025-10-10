@@ -19,9 +19,9 @@ Cały ten temat jest opanowany przez tak silne zaklęcia, że cieszę się, że 
 
 Samochód, którym jeżdżę ma taką wspaniałą funkcję zapewniającą mi BEZPIECZEŃSTWO — niczym budzik irytuje nawracającym sygnałem dźwiękowym, gdy nie zapnę pasów. Pewnego dnia kupiłem w chińczyku samą końcówkę do pasa, wpiąłem w klamrę i kompletnie zapomniałem o tym, że pasy kiedykolwiek istniały. Zapomnieć zajęło mi sekundę. Teraz muszę podejmować aktywny wysiłek, aby pamiętać o nich i zapinać je przy wyjeździe z miasta. 
 
-Może dlatego propaganda jest tak silna i nachalna? Byleby żywych nie wypuścić z rąk! Bo gdy na godzinę wyłączyć telewizor, gdy na chwilę wyjść z domu, wszystko wraca do normy? Gdy człowiek zobaczy piękno, ciężko mu zaakceptować wszechobecną brzydotę. Piękno jest wszędzie. To ja udawałem, że go nie widzę, a ktoś inny próbował zasłonić mi je brudną derką. A ono, niczym mlecz na betonowym chodniku — zawsze znajdzie szczelinę, przebije się na powietrze i stanie w promieniach słońca. Jak je Bóg puścił w ruch, tak życia się nie zatrzyma.
+Może dlatego propaganda jest tak silna i nachalna? Bo gdy na godzinę wyłączyć telewizor, gdy na chwilę wyjść z domu, wszystko wraca do normy? Jeśli człowiek zobaczy piękno, ciężko mu zaakceptować wszechobecną brzydotę. Piękno jest wszędzie. To ja udawałem, że go nie widzę, a ktoś inny próbował zasłonić mi je brudną derką. A ono, niczym mlecz na betonowym chodniku — zawsze znajdzie szczelinę, przebije się na powietrze i stanie w promieniach słońca. Bóg życie puścił w ruch, a człowiek go nie zatrzyma.
 
-Dwa lata po tym, jak Janowi urodził się najmłodszy syn, mi urodziła się córka. Nigdy nie byłem szczęśliwszy, nigdy nie czułem się lepiej.
+Dwa lata po tym, jak Janowi urodził się najmłodszy syn, mi urodziła się córka. 
 
 W zeszłym miesiącu poznałem kolejnego Nowego starego znajomego. I ponownie na kawie. Ba! Nawet nie pijam kawy... 
 
