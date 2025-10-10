@@ -6,7 +6,7 @@ tags: ["myśli",]
 
 <article class="print-area">
 
-Jakiś czas temu obejrzałem film z kanału Dogen - [Why Japan Loves Small Things.](https://www.youtube.com/watch?v=CPKjnJ4oi4k) Często do niego wracam, często nad nim myślę. Pozwoliłem sobie ten materiał skrócić i przetłumaczyć, ale i tak zachęcam do zapoznania się z oryginałem.
+Jest taki film na kanale Dogen, do którego często wracam. - [Why Japan Loves Small Things.](https://www.youtube.com/watch?v=CPKjnJ4oi4k) Pozwoliłem sobie ten materiał skrócić i przetłumaczyć, ale i tak zachęcam do zapoznania się z oryginałem.
 
 >Kiedy przyjechałem do Japonii, widziałem ludzi kupujących paczki z jednym grzybem ringi, mimo że paczki z dwoma kosztowały tyle samo. Moja była dziewczyna celowo wybrała małe mieszkanie, choć w tej samej okolicy były znacznie większe w podobnej cenie. Zapytałem ją, czemu się nie przeprowadzi do jednego z tych większych. Odpowiedziała tylko: „Nie potrzebuję tego”. 
 >
