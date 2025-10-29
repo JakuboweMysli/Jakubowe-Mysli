@@ -29,3 +29,7 @@ theme = "shibui"
 
 [taxonomies]
   tag = "tags"
+
+[outputs]
+home = ["HTML", "RSS"]
+section = ["HTML", "RSS"]
