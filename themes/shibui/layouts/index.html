@@ -1,5 +1,12 @@
 {{ define "main" }}
-  {{ .Content }}
+
+{{ .Content }}
+Najnowszy wpis:<br>
+{{ $latest := first 1 (sort .Site.RegularPages ".Date" "desc") }}
+{{ with index $latest 0 }}
+  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+{{ end }}
+
   <div class="terminal-nav">
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
   </div>

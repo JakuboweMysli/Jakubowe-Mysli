@@ -1,7 +1,7 @@
 ---
-title: "28.10.2025: Po co komu pies - psia gorączka"
+title: "28.10.2025: Po co komu pies?"
 date: 2025-10-28T13:13:09+02:00
-draft: true
+draft: false
 tags: ["myśli",]
 ---
 
