@@ -1,9 +1,9 @@
 ---
 title: "Mój Ojciec"
 ---
-<img alt="BG.jpg" src="/zdjecia/okladka.png">
+<img alt="okladka" src="/zdjecia/okladka.png">
 
-# Scenariusz na Orawę, autorstwa Krzszytofa Strauchmanna
+# Scenariusz na Orawę, książka autorstwa Krzszytofa Strauchmanna
 
 W 2004 roku, gdy mieszkaliśmy na Podhalu, miłość mojego Ojca do tego regionu zaowocowała w wydanej przez niego książce. Praca dziennikarza pozwoliła mu dotrzeć do prawdziwego serca gór — ludzi tam mieszkających.
 
