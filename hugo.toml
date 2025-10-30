@@ -1,6 +1,7 @@
 baseURL = 'http://jakubowemysli.pl/'
 title = 'Myśli Jakubowe'
 theme = "shibui"
+lanugage = "pl-pl"
 
 [params]
   author = "Jakub Strauchmann"
@@ -38,3 +39,5 @@ theme = "shibui"
 [outputs]
 home = ["HTML", "RSS"]
 section = ["HTML", "RSS"]
+taxonomy = ["HTML", "RSS"]
+
