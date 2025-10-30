@@ -8,17 +8,22 @@ theme = "shibui"
 
 [menu]
   [[menu.main]]
-    name = "Blog"
+    name = "Blog —"
     url = "/posts/"
     weight = 1
   [[menu.main]]
-    name = "Galeria"
+    name = "Galeria —"
     url = "/galeria/"
     weight = 2
   [[menu.main]]
+    name = "Mój Ojciec —"
+    url = "/ojciec/"
+    weight = 3    
+  [[menu.main]]
     name = "Kontakt"
     url = "/kontakt/"
-    weight = 3    
+    weight = 4
+    
 
 [markup]
   [markup.goldmark]
