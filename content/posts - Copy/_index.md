@@ -1,0 +1,7 @@
+---
+title: "Blog"
+weight: 1
+layout: "blog"
+---
+
+Lista artykułów. Teksty są pokatalogowane, wystarczy kliknąć w odpowiedni tag.
