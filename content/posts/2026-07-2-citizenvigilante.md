@@ -22,7 +22,7 @@ Dupa, a nie mściciel niesprawiedliwości społecznej. Taka bardziej psychopatyc
 
 Coś jak Słowik i Masa, którzy niedawno brandzlowali się na Robinów Hoodów. Robin Hood nie obcinał ludziom palców w celu wymuszenia haraczu od rodzin ofiar.
 
-Dlatego uważam, że jest to element wojny gangów u szczytu władzy. Tęczowo-czerwona mafia właśnie przegrywa, pewnie niedługo będzie musiała uciekać do Argentyny, ale nie wypychają jej te słynne zwykłe ludzie klasy średniej, ale jakiś tam nowy dobry pan, który może świeższym, może normalniejszym, ale ciągle butem stał nam będzie na szyjach. 
+Dlatego uważam, że jest to element wojny gangów u szczytu władzy. Tęczowo-czerwona mafia właśnie przegrywa, pewnie niedługo będzie musiała uciekać do Argentyny, ale nie wypychają jej te słynne zwykłe ludzie klasy średniej, tylko jakiś tam nowy dobry pan, który może świeższymi, może normalniejszymi, lecz ciągle butami stał nam będzie na szyjach. 
 
 No i przede wszystkim, ten tak znienawidzony film obnażający bandycki charakter biednych uchodźców nic nie wspomina o ludziach, którzy wszystkich tych zagubionych i zdezorientowanych diabłó tutaj sprowadza. 
 
