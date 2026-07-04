@@ -1,7 +1,7 @@
 ---
 title: "2.07.2026: Citizen Vigilante"
 date: 2026-07-02T08:00:09+02:00
-tags: ["myśli"]
+tags: ["myśli", "kultura"]
 ---
 
 <article class="print-area">
