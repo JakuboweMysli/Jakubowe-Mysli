@@ -1,6 +1,6 @@
 ---
 title: "4.07.2026: Rytualne upodlenie w promocyjnej cenie"
-date: 2026-06-04T08:00:09+02:00
+date: 2026-07-04T08:00:09+02:00
 tags: ["myśli"]
 ---
 
