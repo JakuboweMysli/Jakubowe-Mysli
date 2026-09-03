@@ -1,5 +1,5 @@
 ---
-title: "3.09.2026: Ale mnie w tym miesiącu miotało"
+title: "3.09.2026: Sierpniowa Odyseja"
 date: 2026-09-03T13:13:09+02:00
 tags: ["myśli", "podróże"]
 ---
