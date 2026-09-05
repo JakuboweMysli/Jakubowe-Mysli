@@ -1,5 +1,5 @@
 ---
-title: "5.09.2026: Love is BLind: Wiwisekcja korposzczura i upadającego imperium"
+title: "5.09.2026: Love is Blind: Wiwisekcja korposzczura i upadającego imperium"
 date: 2026-09-05T08:00:09+02:00
 tags: ["myśli"]
 ---
