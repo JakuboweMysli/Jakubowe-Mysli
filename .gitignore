@@ -2,6 +2,9 @@
 .env
 *.json
 
+#blog
+/content/posts2/
+
 #Automat do gita
 /git skrypt.bat
 
